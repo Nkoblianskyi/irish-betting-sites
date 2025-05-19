@@ -34,7 +34,7 @@ export default function Home() {
             className="text-xs sm:text-sm md:text-lg text-gray-300 mb-2 sm:mb-6 animate-fade-in-up"
             style={{ animationDelay: "100ms" }}
           >
-            LAST UPDATED: APRIL 2025
+            LAST UPDATED: May 2025
           </p>
           <p
             className="max-w-3xl mx-auto text-xs sm:text-sm md:text-base mb-3 sm:mb-6 animate-fade-in-up line-clamp-2 sm:line-clamp-none"
