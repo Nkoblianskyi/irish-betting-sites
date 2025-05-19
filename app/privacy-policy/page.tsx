@@ -13,10 +13,10 @@ export default function PrivacyPolicy() {
 
       <section className="py-12 bg-white flex-grow">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold mb-8">Privacy Policy</h1>
+          <h1 className="text-3xl font-bold mb-8 text-black">Privacy Policy</h1>
 
           <div className="prose max-w-4xl">
-            <p>Last updated: April 2025</p>
+            <p>Last updated: May 2025</p>
 
             <p>
               At BestIrishBettingSite.com, safeguarding your privacy remains our paramount concern. This Privacy Policy

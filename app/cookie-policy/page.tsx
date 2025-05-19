@@ -13,7 +13,7 @@ export default function CookiePolicy() {
 
       <section className="py-12 bg-white flex-grow">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold mb-8">Cookie Policy</h1>
+          <h1 className="text-3xl font-bold mb-8 text-black">Cookie Policy</h1>
 
           <div className="prose max-w-4xl">
             <p>Last updated: April 2025</p>
