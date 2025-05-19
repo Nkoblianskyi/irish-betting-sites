@@ -61,7 +61,7 @@ export function SiteFooter() {
               </Link>
 
               <Link href="https://www.gambleaware.org/" className="transition-transform duration-300 hover:scale-105">
-                <Image src="/gamble-aware.png" alt="GamCare" width={120} height={40} className="mb-2 mt-4" />
+                <Image src="/gamble-aware.png" alt="gamble-aware" width={120} height={40} className="mb-2 mt-4" />
               </Link>
 
               <Link href="https://gamblingcare.ie/" className="transition-transform duration-300 hover:scale-105">
@@ -69,7 +69,7 @@ export function SiteFooter() {
               </Link>
 
               <Link href="https://www.problemgambling.ie/" className="transition-transform duration-300 hover:scale-105">
-                <Image src="/extern-problem.png" alt="Gambling Therapy" width={120} height={40} className="mb-2 mt-4" />
+                <Image src="/extern-problem.png" alt="extern-problem" width={120} height={40} className="mb-2 mt-4" />
               </Link>
             </div>
           </div>
