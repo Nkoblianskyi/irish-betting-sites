@@ -3,10 +3,10 @@
 import { useState } from "react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import { BettingSitesList } from "@/components/betting-sites-list"
-import { TopOffersModal } from "@/components/top-offers-modal"
 import { AgeRestrictionModal } from "@/components/age-restriction-modal"
 import { AdvertiserInfoModal } from "@/components/advertiser-info-modal"
+import TopOffersModal from "@/components/top-offers-modal"
+import BettingSitesList from "@/components/betting-sites-list"
 
 export default function Home() {
   const [isAgeModalOpen, setIsAgeModalOpen] = useState(false)
@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="relative py-16 bg-cover bg-center text-white text-center md:py-32"
+        className="relative py-6 sm:py-8 md:py-20 bg-cover bg-center text-white text-center"
         style={{
           backgroundImage: "url('/f793537e61017ba8d6e5e5e4075b0f43.jpg')",
           backgroundSize: "cover",
@@ -27,26 +27,32 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black/70"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 animate-fade-in-up">
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold mb-1 sm:mb-2 animate-fade-in-up">
             IRELAND'S TOP <span className="text-emerald-500">ONLINE BETTING</span> PLATFORMS
           </h1>
-          <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-6 animate-fade-in-up" style={{ animationDelay: "100ms" }}>
-            LAST UPDATED: May 2025
+          <p
+            className="text-xs sm:text-sm md:text-lg text-gray-300 mb-2 sm:mb-6 animate-fade-in-up"
+            style={{ animationDelay: "100ms" }}
+          >
+            LAST UPDATED: APRIL 2025
           </p>
-          <p className="max-w-3xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "200ms" }}>
+          <p
+            className="max-w-3xl mx-auto text-xs sm:text-sm md:text-base mb-3 sm:mb-6 animate-fade-in-up line-clamp-2 sm:line-clamp-none"
+            style={{ animationDelay: "200ms" }}
+          >
             Searching for dependable betting platforms in Ireland? You've landed in exactly the right place! Our expert
             team has analyzed what Irish bettors truly value and we're here to guide you towards the most trustworthy
             options available.
           </p>
 
           <div
-            className="flex flex-wrap justify-center gap-6 mb-8 animate-fade-in-up"
+            className="flex flex-wrap justify-center gap-2 sm:gap-6 mb-3 sm:mb-8 animate-fade-in-up"
             style={{ animationDelay: "300ms" }}
           >
             <div className="flex items-center group">
-              <span className="bg-emerald-600 p-1 rounded-full mr-2 transition-transform duration-300 group-hover:scale-110">
+              <span className="bg-emerald-600 p-0.5 sm:p-1 rounded-full mr-1 sm:mr-2 transition-transform duration-300 group-hover:scale-110">
                 <svg
-                  className="w-4 h-4 text-white"
+                  className="w-3 h-3 sm:w-4 sm:h-4 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -55,12 +61,14 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </span>
-              <span className="group-hover:text-emerald-400 transition-colors duration-300">Fully Licensed</span>
+              <span className="text-xs sm:text-sm group-hover:text-emerald-400 transition-colors duration-300">
+                Fully Licensed
+              </span>
             </div>
             <div className="flex items-center group">
-              <span className="bg-emerald-600 p-1 rounded-full mr-2 transition-transform duration-300 group-hover:scale-110">
+              <span className="bg-emerald-600 p-0.5 sm:p-1 rounded-full mr-1 sm:mr-2 transition-transform duration-300 group-hover:scale-110">
                 <svg
-                  className="w-4 h-4 text-white"
+                  className="w-3 h-3 sm:w-4 sm:h-4 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -69,12 +77,14 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </span>
-              <span className="group-hover:text-emerald-400 transition-colors duration-300">Regulated in Ireland</span>
+              <span className="text-xs sm:text-sm group-hover:text-emerald-400 transition-colors duration-300">
+                Regulated in Ireland
+              </span>
             </div>
             <div className="flex items-center group">
-              <span className="bg-emerald-600 p-1 rounded-full mr-2 transition-transform duration-300 group-hover:scale-110">
+              <span className="bg-emerald-600 p-0.5 sm:p-1 rounded-full mr-1 sm:mr-2 transition-transform duration-300 group-hover:scale-110">
                 <svg
-                  className="w-4 h-4 text-white"
+                  className="w-3 h-3 sm:w-4 sm:h-4 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -83,11 +93,13 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </span>
-              <span className="group-hover:text-emerald-400 transition-colors duration-300">Quick Withdrawals</span>
+              <span className="text-xs sm:text-sm group-hover:text-emerald-400 transition-colors duration-300">
+                Quick Withdrawals
+              </span>
             </div>
           </div>
 
-          <p className="text-sm animate-fade-in-up" style={{ animationDelay: "400ms" }}>
+          <p className="text-xs animate-fade-in-up" style={{ animationDelay: "400ms" }}>
             Play responsibly. Terms and wagering conditions apply.{" "}
             <button
               onClick={() => setIsAdvertiserModalOpen(true)}

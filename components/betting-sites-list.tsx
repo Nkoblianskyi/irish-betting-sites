@@ -85,43 +85,45 @@ export function BettingSitesList() {
 
   return (
     <section className="py-1 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-2 animate-fade-in text-black">Bookmakers available in Ireland</h2>
+      <div className="container mx-auto px-2 sm:px-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-center mb-2 animate-fade-in text-black">
+          Bookmakers available in Ireland
+        </h2>
 
-        <div className="w-full space-y-4">
+        <div className="w-full space-y-2 sm:space-y-4">
           {sites.map((site, index) => (
             <div
               key={site.id}
-              className="bg-white border-b p-4 mb-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up"
+              className="bg-white border-b p-2 sm:p-4 mb-2 sm:mb-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <div className="grid grid-cols-1 md:grid-cols-6 gap-4 items-center">
-                <div className="md:col-span-1">
-                  <div className="h-16 flex items-center justify-center">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 sm:gap-4 items-center">
+                <div className="col-span-2 sm:col-span-1 md:col-span-1">
+                  <div className="h-10 sm:h-16 flex items-center justify-center">
                     <Image
                       src={site.logo || "/placeholder.svg"}
                       alt={site.name}
                       width={150}
                       height={60}
-                      className="object-contain transition-transform duration-300 hover:scale-105"
+                      className="object-contain max-h-8 sm:max-h-full transition-transform duration-300 hover:scale-105"
                     />
                   </div>
                 </div>
 
-                <div className="md:col-span-1">
+                <div className="col-span-2 sm:col-span-1 md:col-span-1">
                   <div>
-                    <p className="text-xs text-emerald-600 uppercase">{site.welcomeOffer}</p>
-                    <p className="font-bold text-black">{site.bonus}</p>
+                    <p className="text-[10px] sm:text-xs text-emerald-600 uppercase">{site.welcomeOffer}</p>
+                    <p className="font-bold text-sm sm:text-base text-black">{site.bonus}</p>
                   </div>
                 </div>
 
-                <div className="md:col-span-1">
+                <div className="col-span-1 sm:col-span-1 md:col-span-1">
                   <div>
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
                         <svg
                           key={i}
-                          className="w-4 h-4 text-yellow-400 transition-transform duration-300 hover:scale-125"
+                          className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-400 transition-transform duration-300 hover:scale-125"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           xmlns="http://www.w3.org/2000/svg"
@@ -130,42 +132,46 @@ export function BettingSitesList() {
                         </svg>
                       ))}
                     </div>
-                    <p className="text-xs text-gray-500">({site.reviews} reviews)</p>
+                    <p className="text-[10px] sm:text-xs text-gray-500">({site.reviews} reviews)</p>
                   </div>
                 </div>
 
-                <div className="md:col-span-1 text-center relative">
-                  <span className="text-xl font-bold text-black">{site.score.toFixed(1)}</span>
+                <div className="col-span-1 sm:col-span-1 md:col-span-1 text-center relative">
+                  <span className="text-lg sm:text-xl font-bold text-black">{site.score.toFixed(1)}</span>
                   <div className="absolute -top-1 -right-1 md:top-0 md:right-0">
                     <Image
                       src="/images/18-plus.png"
                       alt="18+"
                       width={24}
                       height={24}
-                      className="transition-transform duration-300 hover:scale-110"
+                      className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 hover:scale-110"
                     />
                   </div>
                 </div>
 
-                <div className="md:col-span-1">
-                  <ul className="space-y-1">
+                <div className="hidden sm:block md:col-span-1">
+                  <ul className="space-y-0 sm:space-y-1">
                     {site.features.map((feature, index) => (
-                      <li key={index} className="flex items-center text-sm group text-black">
-                        <CheckCircle2 className="h-4 w-4 text-emerald-600 mr-2 transition-transform duration-300 group-hover:scale-110" />
-                        <span className="group-hover:text-emerald-600 transition-colors duration-300">{feature}</span>
+                      <li key={index} className="flex items-center text-xs sm:text-sm group text-black">
+                        <CheckCircle2 className="h-3 w-3 sm:h-4 sm:w-4 text-emerald-600 mr-1 sm:mr-2 transition-transform duration-300 group-hover:scale-110" />
+                        <span className="group-hover:text-emerald-600 transition-colors duration-300 line-clamp-1">
+                          {feature}
+                        </span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="md:col-span-1">
+                <div className="col-span-2 sm:col-span-1 md:col-span-1">
                   <Button
-                    className="w-full bg-emerald-600 hover:bg-emerald-700 transition-all duration-300 hover:shadow-lg transform hover:scale-105 animate-glow animate-blink"
+                    className="w-full h-8 sm:h-auto text-xs sm:text-sm bg-emerald-600 hover:bg-emerald-700 transition-all duration-300 hover:shadow-lg transform hover:scale-105 animate-glow animate-blink"
                     onClick={() => window.open(site.link, "_blank")}
                   >
                     Get Bonus
                   </Button>
-                  <p className="text-xs text-gray-500 text-center mt-1">18+. T&Cs Apply. Play Responsibly.</p>
+                  <p className="text-[10px] sm:text-xs text-gray-500 text-center mt-0.5 sm:mt-1">
+                    18+. T&Cs Apply. Play Responsibly.
+                  </p>
                 </div>
               </div>
             </div>
@@ -175,3 +181,5 @@ export function BettingSitesList() {
     </section>
   )
 }
+
+export default BettingSitesList
