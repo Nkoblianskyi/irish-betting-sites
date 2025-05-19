@@ -84,9 +84,9 @@ export function BettingSitesList() {
   }
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-1 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-8 animate-fade-in">Bookmakers available in Ireland</h2>
+        <h2 className="text-2xl font-bold text-center mb-2 animate-fade-in text-black">Bookmakers available in Ireland</h2>
 
         <div className="w-full space-y-4">
           {sites.map((site, index) => (
