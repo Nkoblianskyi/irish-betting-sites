@@ -42,6 +42,6 @@ export const bettingSites: BettingSite[] = [
     bonusCode: "BF20",
     features: ["Betting Exchange", "Best Odds", "Cash Out"],
     paymentMethods: ["Visa/Mastercard", "PayPal", "Bank Transfer"],
-    link: "https://uk.mrplay.com/sport/",
+    link: "https://ie.mrplay.com/sport/",
   }
 ]

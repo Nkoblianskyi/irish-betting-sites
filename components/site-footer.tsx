@@ -79,7 +79,7 @@ export function SiteFooter() {
             <p className="text-sm text-gray-300 mb-4 hover:text-gray-200 transition-colors duration-300">
               Any reproduction or distribution of this website, whether in part or in full, is strictly prohibited. The
               services and promotional offers featured here are intended exclusively for individuals aged 18 or older
-              who are currently located within the United Kingdom. Each offer may be subject to additional rules or
+              who are currently located within the Irlande. Each offer may be subject to additional rules or
               limitations set by our partners. We do not bear responsibility for these terms and advise all users to
               carefully review the conditions.
             </p>

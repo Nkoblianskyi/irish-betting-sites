@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="relative py-16 bg-cover bg-center text-white text-center"
+        className="relative py-16 bg-cover bg-center text-white text-center md:py-32"
         style={{
           backgroundImage: "url('/f793537e61017ba8d6e5e5e4075b0f43.jpg')",
           backgroundSize: "cover",
@@ -27,11 +27,11 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black/70"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 animate-fade-in-up">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 animate-fade-in-up">
             IRELAND'S TOP <span className="text-emerald-500">ONLINE BETTING</span> PLATFORMS
           </h1>
-          <p className="text-sm text-gray-300 mb-6 animate-fade-in-up" style={{ animationDelay: "100ms" }}>
-            LAST UPDATED: APRIL 2025
+          <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-6 animate-fade-in-up" style={{ animationDelay: "100ms" }}>
+            LAST UPDATED: May 2025
           </p>
           <p className="max-w-3xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: "200ms" }}>
             Searching for dependable betting platforms in Ireland? You've landed in exactly the right place! Our expert
