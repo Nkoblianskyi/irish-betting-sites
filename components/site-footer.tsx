@@ -84,7 +84,7 @@ export function SiteFooter() {
               carefully review the conditions.
             </p>
             <p className="text-sm text-gray-300 hover:text-gray-200 transition-colors duration-300">
-              © 2023 BestIrishBettingSite.com. All rights reserved.
+              © 2025 BestIrishBettingSite.com. All rights reserved.
             </p>
           </div>
         </div>
