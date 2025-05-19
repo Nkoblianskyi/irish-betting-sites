@@ -1,0 +1,44 @@
+{
+  "lastUpdated": "APRIL 2023",
+  "sites": [
+    {
+      "id": "betiton",
+      "name": "betiton",
+      "logo": "/betiton.png",
+      "score": 9.8,
+      "bonus": "BET 10€ GET 40€",
+      "bonusCode": "",
+      "welcomeOffer": "WELCOME OFFER",
+      "features": ["4,500+ Sport Events", "24/7 Support", "Instant Withdrawals"],
+      "isNew": false,
+      "reviews": 2750,
+      "link": "https://www.betiton.com/en-ie/sport/"
+    },
+    {
+      "id": "mrplay",
+      "name": "Mr.Play",
+      "logo": "/Screenshot_1222.png",
+      "score": 9.6,
+      "bonus": "Bet €10 GET €10",
+      "bonusCode": "",
+      "welcomeOffer": "WELCOME OFFER",
+      "features": ["3,200+ Sport Events", "Fast Payouts", "Live Betting"],
+      "isNew": false,
+      "reviews": 2511,
+      "link": "https://uk.mrplay.com/sport/"
+    },
+    {
+      "id": "quinn",
+      "name": "quinn",
+      "logo": "/quinn.png",
+      "score": 9.5,
+      "bonus": "Bet €15 GET €10",
+      "bonusCode": "",
+      "welcomeOffer": "WELCOME OFFER",
+      "features": ["New Bookmaker", "Mobile Friendly", "Weekly Promotions"],
+      "isNew": true,
+      "reviews": 2700,
+      "link": "https://www.quinnbet.com/ie/sports"
+    }
+  ]
+}
