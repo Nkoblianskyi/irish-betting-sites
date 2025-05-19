@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="relative py-6 sm:py-8 md:py-20 bg-cover bg-center text-white text-center"
+        className="relative py-6 sm:py-8 md:py-10 bg-cover bg-center text-white text-center"
         style={{
           backgroundImage: "url('/f793537e61017ba8d6e5e5e4075b0f43.jpg')",
           backgroundSize: "cover",
